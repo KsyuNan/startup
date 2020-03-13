@@ -1,0 +1,541 @@
+
+* {
+   font-family: 'Asap', sans-serif;
+}
+
+section {
+   margin-top:103px;
+
+}
+
+/*Header area*/
+
+header {
+   position: relative;
+   background-image: url(img/background.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   
+}
+
+.overlay {
+   background-color:rgba(0, 0, 0, 0.3);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+ 
+}
+
+.main-wraper .navbar a {
+     color:#ffffff;
+}
+
+.navbar {
+   padding-top:50px;
+}
+
+.navbar-brand {
+
+   font-weight: 600;
+   font-size: 32px;
+}
+
+.nav-item a {
+   font-size: 18px;
+   margin-top: 30px;
+}
+
+.main_title {
+    padding-top: 28% ;
+}
+
+.main_title a{
+     margin-top: 30px;
+
+}
+
+.main_title h1 {
+   color: #ffffff;
+   font-size: 64px;
+   text-transform: uppercase;
+   margin-bottom: 22px;
+   font-family: 'Asap', sans-serif;
+}
+
+.main_title h5 {
+   font-size: 26px;
+   text-transform: capitalize;
+   color: #ffffff;
+   margin-bottom: 65px;
+}
+
+.btn-main {
+   border: 2px solid #ffffff ;
+   color: #fff;
+   text-transform: uppercase;
+   padding: 10px 35px;
+   font-weight: 600; 
+}
+
+.btn-main:hover {
+   background-color: #fff;
+   text-decoration: none;
+   color: #c0301c;
+}
+
+
+
+
+
+.title-heading hr {
+   margin: 20px auto;
+   width: 5%;
+   border: 2px solid #555555;
+
+}
+
+.title-heading h2 {
+   color: #555555; 
+   text-transform: uppercase;
+   font-size: 30px;
+   font-weight: 600;
+}
+
+.title-heading p {
+   font-size: 16px;
+   font-family: 'Asap', sans-serif;
+   margin-bottom: 73px;
+}
+
+.circle {
+   width: 90px;
+   height: 90px;
+   border-radius: 45px;
+   border: 2px solid #dddddd;
+   margin-left: 36%;
+   margin-bottom: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
+   color: #c0301c;
+}
+
+.circle:hover {
+   background-color: #c0301c;
+   color: #fff;
+}
+
+.single_services img{
+   padding-top: 20px;
+
+}
+.single_services h3{
+   font-size: 18px;
+   color: #555555;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+
+/*About-us area*/
+
+.about-us {
+   background-color: #f8f8f8;
+   padding-top: 100px;
+}
+
+.text-title {
+  margin-top: 77px;
+  margin-bottom: 95px;
+}
+
+.team {
+   padding-bottom: 100px;
+}
+
+.team-title {
+   margin-top: 20px;
+   font-family: 'Asap', sans-serif;
+
+}
+
+.team-title h4 {
+   text-transform: uppercase;
+   color: #555555;
+   font-size: 18px;
+
+}
+
+.team-title p {
+    letter-spacing: 1.5;
+    color: #555555;
+   font-size: 14px;
+
+}
+
+
+.single-team {
+   position: relative;
+}
+
+.descript:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 263px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social-network  {
+   position: absolute;
+   list-style: none;
+   display: flex;
+   margin-left:30px !important;
+   padding-top: 180px;
+   color: #fff;
+   
+}
+
+.social-square li a:hover {
+   
+	position: relative;
+	width: 30px;
+	height: 30px;
+   background-color: #c0301c;
+   
+}
+
+
+/* gallery area */
+
+/*Исправить анимацию в галерее*/
+
+
+.navbar-works a {
+   color: #555555;
+   font-weight: 500;
+   font-size: 21px;
+    
+}
+
+.navbar-works a:hover {
+   color: #c0301c;
+
+}
+
+.nav-item a {
+   margin-bottom:30px;
+
+}
+
+.gallery_work {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-column-gap: 25px;
+   grid-row-gap: 25px;
+   list-style: none;
+   
+}
+
+.single-image {
+   position: relative;
+
+}
+
+.overlay-gallery-red {
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 360px;
+   height: 100%;
+   
+}
+
+.overlay-gallery-red:hover {
+   background-color: rgb(227,85,65,0.6);
+
+}
+
+
+.gallery-title{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 35%;
+   padding-top: 25%;
+   color: #fff;
+
+}
+
+.btn-gallery {
+   border: 2px solid #fff;
+   background-color: #fff;
+   color: #c0301c;
+   padding: 6px 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+
+
+/*  Call to action area */
+.call-to-action {
+
+   background-image: url(img/get_and_touch.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 367px;
+   position: relative;
+}
+
+
+/*как сделать оверлей в границах картинки*/
+.overlay-red {
+   background-color: rgb(227,85,65,0.6);
+   position: absolute;
+   width: 100%;
+	height: 100%;
+}
+
+.call-to-action_title h3 {
+   padding-top: 100px;
+   color: #fff;
+   margin-bottom: 30px;
+   font-weight: lighter;
+       
+}
+
+/*Blog item*/
+
+.blog-sub {
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
+   padding-top: 16px;
+   align-items: center;
+}
+
+
+.sub {
+   padding-left: 40px;
+   padding-top: 0;
+}
+
+.sub h4 {
+
+   text-transform: uppercase;
+   font-size: 16px;
+   font-weight: 600;
+   color:#c0301c;
+  
+}
+
+.font-weight-normal  {
+   margin-top: 20px;
+
+}
+
+.btn-call {
+   color: #fff;
+   border: 2px solid #fff;
+   padding: 10px 25px;
+   text-decoration: none;
+   margin-top: 30px;
+   text-transform: uppercase;
+   font-weight: 600;
+
+}
+
+.btn-call:hover { 
+   background-color: white;
+   color: #b92d1a;
+   text-decoration: none;
+   font-weight: 600;
+
+}
+
+.blog-item {
+   margin-top: 73px;
+
+}
+
+
+
+/* Вирівняти квадрат*/
+
+.square {
+	width: 65px;
+	height: 65px;
+   border: 2px solid #555555;
+   padding: 10px 10px 10px 10px;
+
+}
+
+.red-text {
+   color: #b92d1a;
+
+}
+
+.square p {
+   font-size: 25px;
+   line-height: 1em;
+   padding-left: 10px;
+   color: #777777;
+   
+}
+
+.btn-blog {
+   text-transform: uppercase;
+   color: #b92d1a;
+   font-weight: 600;
+
+}
+
+.btn-blog:hover {
+   color: #555555;
+   text-decoration: none;
+
+}
+
+/*Brand area*/
+
+
+
+.brand-box {
+   display: flex;
+   flex-wrap: wrap;
+
+   justify-content: space-around;
+   list-style: none;
+
+}
+
+.brand-area {
+    background-color: #f8f8f8;
+    padding-top: 98px;
+    padding-bottom: 100px;
+    
+}
+
+.brand-title p {
+   font-style: italic;
+
+
+}
+
+/*Contacts area*/
+
+.icon-line {
+   display: flex;
+   align-items: stretch;
+
+}
+
+.icon-line i {
+   font-size: 22px;
+  
+}
+
+.icon-line h5 {
+   padding-left: 14px;
+   font-size: 18px;
+
+}
+
+.single-contact {
+   margin-left:37px;
+}
+
+.btn-contact {
+   border: 1px solid #777777;
+   padding:10px 20px;
+   margin-top: 20px;
+   color: #555555;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 600;
+
+}
+
+.form-sub span  {
+  margin-left: 50px;
+
+}
+
+.form-sub {
+   margin-bottom:100px ;
+}
+
+.form-text-area {
+   margin-bottom: 22px;
+}
+
+
+
+/*Footer area*/
+
+footer {
+  background-color: #b92d1a;
+  padding-top:100px;
+  padding-bottom: 100px;
+}
+
+.nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.nav-footer a {
+  color: #fff;
+
+}
+
+.single-contact p {
+  padding-left: 14px;
+  font-size: 14px;
+}
+
+/*разобраться с :before :after и всунуть обводку кругляком при :hover :active*/
+
+.circle-footer {
+   width: 30px;
+   height: 30px;
+   border: 2px solid #fff;
+	background: transparent;
+	border-radius: 50px;
+}
+
+.circle-footer a{
+   align-items: center;
+
+}
+
+.footer hr {
+   width: 5%;
+   border-bottom: 1px solid #fff;
+
+}
+
+.footer-copyright a {
+   color: #fff;
+}
+
+.footer-copyright a:hover {
+   color: #fff;
+   text-decoration: none;
+  
+}
+
+.fa {
+   color: #fff;
+}
