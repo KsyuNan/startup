@@ -155,10 +155,13 @@ header {
    padding-bottom: 100px;
 }
 
+.team-box {
+  margin: 10px;
+}
+
 .team-title {
    margin-top: 20px;
    font-family: 'Asap', sans-serif;
-
 }
 
 .team-title h4 {
