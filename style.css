@@ -1,11 +1,16 @@
-
 * {
    font-family: 'Asap', sans-serif;
 }
 
-section {
-   margin-top:103px;
+body {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
 
+
+section {
+   padding:7%;
 }
 
 /*Header area*/
@@ -84,10 +89,6 @@ header {
    color: #c0301c;
 }
 
-
-
-
-
 .title-heading hr {
    margin: 20px auto;
    width: 5%;
@@ -106,6 +107,13 @@ header {
    font-size: 16px;
    font-family: 'Asap', sans-serif;
    margin-bottom: 73px;
+}
+
+.services-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 .circle {
@@ -143,21 +151,90 @@ header {
 
 .about-us {
    background-color: #f8f8f8;
-   padding-top: 100px;
 }
 
 .text-title {
-  margin-top: 77px;
   margin-bottom: 95px;
 }
 
-.team {
-   padding-bottom: 100px;
-}
 
 .team-box {
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
 }
+
+.single-team {
+   width: 250px;
+   height: 250px;
+   margin: 10px;
+   background: #fff;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   transition: .6s ease-out;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.single-team:hover {
+  transform: translateY(15px);
+}
+
+.single-team:hover:before {
+   opacity: 1;
+}
+
+.btn-floating i {
+  font-size: 14pt;
+  margin: 4px;
+  color: #fff;
+
+}
+
+.btn-floating:hover i {
+   background-color: #c0301c;
+   border: 1px solid #c0301c;
+   padding: 4px;
+}
+
+.single-team:hover .social-network {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.single-team:before {
+   content: ;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   width: 100%;
+   background: linear-gradient(to top, #000, transparent);
+}
+
+.single-team img {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+.social-network {
+   margin-left: 30%;
+}
+
+.team-sub {
+  display: flex;
+  flex-direction: row;
+  displau
+  margin-top: 5%;
+}
+
 
 .team-title {
    margin-top: 20px;
@@ -168,112 +245,76 @@ header {
    text-transform: uppercase;
    color: #555555;
    font-size: 18px;
-
 }
 
 .team-title p {
     letter-spacing: 1.5;
     color: #555555;
    font-size: 14px;
-
 }
 
-
-.single-team {
-   position: relative;
-}
-
-.descript:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 263px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.social-network  {
-   position: absolute;
-   list-style: none;
-   display: flex;
-   margin-left:30px !important;
-   padding-top: 180px;
-   color: #fff;
-   
-}
-
-.social-square li a:hover {
-   
-	position: relative;
-	width: 30px;
-	height: 30px;
-   background-color: #c0301c;
-   
-}
 
 
 /* gallery area */
 
 /*Исправить анимацию в галерее*/
-
-
-.navbar-works a {
-   color: #555555;
-   font-weight: 500;
-   font-size: 21px;
-    
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
 }
 
-.navbar-works a:hover {
-   color: #c0301c;
 
-}
-
-.nav-item a {
-   margin-bottom:30px;
-
-}
-
-.gallery_work {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(3, 1fr);
-   grid-column-gap: 25px;
-   grid-row-gap: 25px;
-   list-style: none;
-   
-}
 
 .single-image {
    position: relative;
-
+   width: 32%;
+   background-color: rgba(235, 0, 0, 0.65);
+   margin-bottom: 15px;
 }
 
-.overlay-gallery-red {
-   overflow: hidden;
+.image {
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+}
+
+.single-image:hover .image {
+   opacity: 0.3;  
+
+}
+ 
+.single-image:hover .gallery-title {
+   opacity: 1; 
+}
+
+.gallery-title {
+   transition: .5s ease;
+   opacity: 0;
    position: absolute;
-   top: 0;
-   width: 360px;
-   height: 100%;
-   
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
 }
 
-.overlay-gallery-red:hover {
-   background-color: rgb(227,85,65,0.6);
-
-}
-
-
-.gallery-title{
-   position: absolute;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding-left: 35%;
-   padding-top: 25%;
+.gallery-title h5 {
+  
    color: #fff;
+   font-size: 18pt;
+   padding: 5% auto;
+}
 
+ .gallery-title p {
+   color: #fff;
+   font-size: 10pt;
+   padding: 5% auto;
 }
 
 .btn-gallery {
@@ -286,34 +327,52 @@ header {
    font-weight: 600;
 }
 
+.btn-gallery:hover {
+   text-decoration: none;
+   color: #000;
+}
 
+
+.navbar-works a {
+   color: #555555;
+   font-weight: 500;
+   font-size: 21px;  
+}
+
+.navbar-works a:hover {
+   color: #c0301c;
+}
+
+.nav-item a {
+   margin-bottom:30px;
+}
 
 /*  Call to action area */
+
 .call-to-action {
-
-   background-image: url(img/get_and_touch.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   height: 367px;
-   position: relative;
-}
-
-
-/*как сделать оверлей в границах картинки*/
-.overlay-red {
-   background-color: rgb(227,85,65,0.6);
-   position: absolute;
    width: 100%;
-	height: 100%;
-}
+   height: 100%;
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/get_and_touch.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+ }
 
-.call-to-action_title h3 {
-   padding-top: 100px;
+
+.call-to-action_title {
+   
    color: #fff;
    margin-bottom: 30px;
-   font-weight: lighter;
-       
+   font-weight: lighter;   
 }
+
+
+.call-to-action_title h3 {
+   padding-bottom: 30px;
+}
+
+
 
 /*Blog item*/
 
